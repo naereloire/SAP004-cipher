@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(252, 170, 161);
+}
+.icon{
+    content: url('./images/keyicon.png');
+    height:30px;
+    width: 30px;
+    display: block;
+}

@@ -1,14 +1,82 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="root">
+    <h1>Cifra de César</h1>
+    <h2>Criptografia Monoalfabética</h2>
+    <main>
+      <p>
+        A criptografia monoalfabética, é algo que atrai muitos dos entusiastas
+        da tecnologia, uma das mais simples e conhecidas técnicas de criptografia e tem
+        sua origem do grego:
+        <ul>
+          <li>Kryptos = escondido</li>
+          <li>Gráphein = escrita</li>
+        </ul>
+        Desenvolvida com o intuito de possibilitar à dois
+        indivíduos se comunicar de forma segura, ou seja,
+        consiste em cifrar uma informação que será enviada
+        pelo remetente de forma que, caso esta informação
+        seja interceptada por algum intruso, ele não seja capaz de entende-la.
+      </p>
+    </main>
+    <h3>Código de César</h3>
+    <p>
+      Conta a história que Júlio César utilizava um código nas mensagens enviadas a seus generais,
+      um sistema simples de substituição, no qual cada letra da mensagem original era trocada pela
+      letra que se situa três posições à sua frente. Ficando da seguinte forma:
+      Cada letra “A” era substituída pela Letra “D”, “B” por “E” e assim sucessivamente.
+      Qualquer código que tenha esse padrão é considerado um código de César.
+      O alfabéto possui 26 letras, dessa forma pode-se cifrar o texto de 26 formas diferente
+    </p>
+    <div id="instructionStyle">
+      <h2>INSTRUÇÕES</h2>
+      <P>
+        BLALALLABLABLBLABLA
+        BALBALBALABLABLABLA
+        BABLABLALALABALLABA
+        BLABLABALALABLALALB
+        <OL>
+          <li>Offset</li>
+          <li>cifra ou Decifra</li>
+        </OL>
+      </P>
     </div>
-    <script src="index.js" type="module"></script>
-  </body>
+    <div id="inputUserText">
+      <label for="textarea">Digite aqui sua mensagem </label>
+      <textarea name="textarea" id="textarea" cols="60" rows="20">
+          Insira a mensagem
+        </textarea>
+       </div>
+    <form>
+      
+      <label for="quantity"><i class='icon'></i></label>
+      <input type="number" id="quantity" name="quantity" min="1">
+      <input type="button" value="ENCODE">
+      <input type="button" value="DECODE">
+    </form>
+    
+    <div id="inputResultUserText">
+      <label for="resultTextarea">Digite aqui sua mensagem </label>
+      <textarea name="resultTextarea" id="ResultTextarea" cols="60" rows="20">
+          resultado
+        </textarea>
+       </div>
+      <form>
+       <input type="button" value="COPIAR">
+       <input type="button" value="REINICIAR">
+     </form>
+
+
+  </div>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
