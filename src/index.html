@@ -8,75 +8,82 @@
 </head>
 
 <body>
-  <div id="root">
-    <h1>Cifra de César</h1>
-    <h2>Criptografia Monoalfabética</h2>
-    <main>
-      <p>
-        A criptografia monoalfabética, é algo que atrai muitos dos entusiastas
-        da tecnologia, uma das mais simples e conhecidas técnicas de criptografia e tem
-        sua origem do grego:
-        <ul>
-          <li>Kryptos = escondido</li>
-          <li>Gráphein = escrita</li>
-        </ul>
-        Desenvolvida com o intuito de possibilitar à dois
-        indivíduos se comunicar de forma segura, ou seja,
-        consiste em cifrar uma informação que será enviada
-        pelo remetente de forma que, caso esta informação
-        seja interceptada por algum intruso, ele não seja capaz de entende-la.
-      </p>
-    </main>
-    <h3>Código de César</h3>
-    <p>
-      Conta a história que Júlio César utilizava um código nas mensagens enviadas a seus generais,
+
+  <main>
+    <h1>Cifra de César-Criptografia Monoalfabética</h1>
+    <hr>
+
+    <p> A criptografia monoalfabética, é algo que atrai jornalistas que precisam se comunicar com 
+      suas fontes de forma segura. Garatindo que caso a mensagem seja intercepitada, seu conteúdo 
+      não seja revelado. 
+      
+    </p>
+
+    
+
+
+    <p> Conta a história que Júlio César utilizava um código nas mensagens enviadas a seus generais,
       um sistema simples de substituição, no qual cada letra da mensagem original era trocada pela
       letra que se situa três posições à sua frente. Ficando da seguinte forma:
       Cada letra “A” era substituída pela Letra “D”, “B” por “E” e assim sucessivamente.
       Qualquer código que tenha esse padrão é considerado um código de César.
-      O alfabéto possui 26 letras, dessa forma pode-se cifrar o texto de 26 formas diferente
+      O alfabéto possui 26 letras, dessa forma pode-se cifrar o texto de 26 formas diferente.
     </p>
+
     <div id="instructionStyle">
+
       <h2>INSTRUÇÕES</h2>
-      <P>
-        BLALALLABLABLBLABLA
-        BALBALBALABLABLABLA
-        BABLABLALALABALLABA
-        BLABLABALALABLALALB
+      <P> Para utilizar a cifra de césar siga os tópicos abaixo:
+
         <OL>
-          <li>Offset</li>
-          <li>cifra ou Decifra</li>
-        </OL>
+          <li>Insira sua mensagem no campo de texto abaixo (Não utilize caracteres especiais).</li>
+          <li>Escolha o offset no ícone da chave.</li>
+          <li>Clique no botão de acordo com a opção desejada codificar/decodificar.</li>
+          <li>Sua mensagem aparecerá no campo de texto a direita, podendo ser copiada.</li>
+         </OL>
       </P>
+      <h5><mark>IMPORTANTE:</mark>Não esqueça que a mesma chave escolhida
+        será necessaria para codificar e decodificar sua mensagem.</h5>
+
     </div>
-    <div id="inputUserText">
-      <label for="textarea">Digite aqui sua mensagem </label>
-      <textarea name="textarea" id="textarea" cols="60" rows="20">
-          Insira a mensagem
-        </textarea>
-       </div>
-    <form>
-      
-      <label for="quantity"><i class='icon'></i></label>
-      <input type="number" id="quantity" name="quantity" min="1">
-      <input type="button" value="ENCODE">
-      <input type="button" value="DECODE">
-    </form>
-    
-    <div id="inputResultUserText">
-      <label for="resultTextarea">Digite aqui sua mensagem </label>
-      <textarea name="resultTextarea" id="ResultTextarea" cols="60" rows="20">
-          resultado
-        </textarea>
-       </div>
-      <form>
-       <input type="button" value="COPIAR">
-       <input type="button" value="REINICIAR">
-     </form>
+
+    <div id="boxes">
+
+      <div id="boxInput">
+        <label for="messageTextArea"><strong>Mensagem:</strong></label>
+        <textarea name="textarea" id="messageTextArea" class="boxStyle" cols="50" rows="10">
+    Insira a mensagem aqui
+    </textarea>
+
+        <form>
+          <i class='icon'></i>
+          <input type="number" id="quantity" class="boxStyle" name="quantity" min="1" value="1">
+          <button type="button" id="buttonEncode">ENCODE</button>
+          <button type="button" id="buttonDecode">DECODE</button>
+        </form>
+      </div>
 
 
-  </div>
-  <script src="index.js" type="module"></script>
+      <div id="boxOutput">
+
+        <label for="resultTextarea"><strong>Resultado:</strong></label>
+
+        <textarea name="resultTextarea" id="ResultTextarea" class="boxStyle" cols="50" rows="10">
+     resultado vai aparecer aqui
+    </textarea>
+
+        <form>
+          <button type="button" id="buttonCopy">COPIAR</button>
+          <button type="button" id="buttonRefresh">REINICIAR</button>
+        </form>
+      </div>
+
+
+
+    </div>
+    <script src="index.js" type="module"></script>
+  </main>
+
 </body>
 
 </html>
