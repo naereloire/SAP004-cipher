@@ -59,7 +59,7 @@ h1 {
 }
 
 #quantity {
-    width: 15%;
+    width: 50px;
     padding: 11px;
     vertical-align: middle;
     text-align: center;
@@ -70,17 +70,21 @@ h1 {
     display: table;
     clear: both;
     margin: auto;
+    width: 90%;
 }
 
 #boxInput {
+    display: block;
     width: 45%;
     float: left;
     margin-bottom: 15px;
+    margin: auto;
 }
 
 #boxOutput {
-    width: 45%;
+    width:45%;
     float: right;
+    display: none;
 }
 
 button {
@@ -90,9 +94,10 @@ button {
     text-align: center;
     display: inline-block;
     font-size: 12px;
-    margin: 3px;
+    margin: 0 0 ;
     font-weight: bold;
     border-radius: 5px;
+    
 }
 
 .boxStyle {
@@ -105,3 +110,28 @@ button {
     -moz-box-shadow: 1px 1px 2px #333333;
     -webkit-box-shadow: 1px 1px 2px #333333;
 }
+/* #imagemMoeda{
+    align-items: left;
+    width: 0 0;
+    size: 6em;
+    padding-left: 5em;
+
+}
+#coin{
+    width:5em;
+    padding:5em;
+} */
+
+
+#texby{
+
+    color:#171C3E ;
+    font-size: 10em;
+    text-align: center;
+    
+}
+
+
+/* thebuguer**** */
+
+/* id vem pelo # e class pelo . */

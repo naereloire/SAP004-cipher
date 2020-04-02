@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body >
+  <div id="texby"> </div>
 
-  <main>
+  <main id="main">
     <h1>Cifra de César-Criptografia Monoalfabética</h1>
     <hr>
 
@@ -51,9 +52,7 @@
 
       <div id="boxInput">
         <label for="messageTextArea"><strong>Mensagem:</strong></label>
-        <textarea name="textarea" id="messageTextArea" class="boxStyle" cols="50" rows="10">
-    Insira a mensagem aqui
-    </textarea>
+        <textarea name="textarea" id="messageTextArea" class="boxStyle" cols="50" rows="10" placeholder="Insira a mensagem aqui"></textarea>
 
         <form>
           <i class='icon'></i>
@@ -62,19 +61,22 @@
           <button type="button" id="buttonDecode">DECODE</button>
         </form>
       </div>
+      
+      <!-- <div id="imagemMoeda"> <img id="coin" src="images/logocifra.jpg"> </div> -->
 
 
       <div id="boxOutput">
 
         <label for="resultTextarea"><strong>Resultado:</strong></label>
 
-        <textarea name="resultTextarea" id="ResultTextarea" class="boxStyle" cols="50" rows="10">
-     resultado vai aparecer aqui
-    </textarea>
+        <textarea name="resultTextarea" id="ResultTextarea" class="boxStyle" cols="50" rows="10" placeholder=" Seu resultado vai aparecer aqui"></textarea>
+     
+
 
         <form>
           <button type="button" id="buttonCopy">COPIAR</button>
           <button type="button" id="buttonRefresh">REINICIAR</button>
+          <button type="button" id="buttonOut">SAIR</button>
         </form>
       </div>
 
