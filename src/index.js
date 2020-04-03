@@ -1,13 +1,13 @@
-// import cipher from './cipher.js';
+import cipher from './cipher.js';
 
-// console.log(cipher);
+console.log(cipher);
 
 var getButtonEncode = document.getElementById("buttonEncode")
 getButtonEncode.onclick = function (event) {
   let getTextArea = document.getElementById("messageTextArea").value
   let getOffSet = document.getElementById("quantity").value
   let getBoxResult = document.getElementById("ResultTextarea")
-  getBoxResult.innerHTML = cifrar(getTextArea, getOffSet)
+  getBoxResult.innerHTML = cipher.cifrar(getTextArea, getOffSet)
   let getBoxOutput = document.getElementById("boxOutput")
   getBoxOutput.style.display = "block"
  
@@ -19,7 +19,7 @@ getButtonDecode.onclick = function (event) {
   let getTextArea = document.getElementById("messageTextArea").value
   let getOffSet = document.getElementById("quantity").value
   let getBoxResult = document.getElementById("ResultTextarea")
-  getBoxResult.innerHTML = decifrar(getTextArea, getOffSet)
+  getBoxResult.innerHTML = cipher.decifrar(getTextArea, getOffSet)
   let getBoxOutput = document.getElementById("boxOutput")
   getBoxOutput.style.display = "block"
  
@@ -29,13 +29,13 @@ getButtonDecode.onclick = function (event) {
 
 function cifrar(offset, mensagem) {
 
-  return ("blábláblá")
+  return ("manga")
 
 }
 
 function decifrar(offset, mensagem) {
 
-  return ("fratellononmangiatuttiibiscotti")
+  return ("abacate")
 
 }
 
