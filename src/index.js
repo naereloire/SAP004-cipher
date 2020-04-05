@@ -1,13 +1,13 @@
 import cipher from './cipher.js';
 
-console.log(cipher);
+// console.log(cipher);
 
 var getButtonEncode = document.getElementById("buttonEncode")
-getButtonEncode.onclick = function (event) {
+ getButtonEncode.onclick = function () {
   let getTextArea = document.getElementById("messageTextArea").value
-  let getOffSet = document.getElementById("quantity").value
+  let getOffSet = Number(document.getElementById("quantity").value)
   let getBoxResult = document.getElementById("ResultTextarea")
-  getBoxResult.innerHTML = cipher.cifrar(getTextArea, getOffSet)
+  getBoxResult.innerHTML = cipher.encode( getOffSet,getTextArea)
   let getBoxOutput = document.getElementById("boxOutput")
   getBoxOutput.style.display = "block"
  
@@ -15,11 +15,11 @@ getButtonEncode.onclick = function (event) {
 }
 
 var getButtonDecode = document.getElementById("buttonDecode")
-getButtonDecode.onclick = function (event) {
+getButtonDecode.onclick = function () {
   let getTextArea = document.getElementById("messageTextArea").value
-  let getOffSet = document.getElementById("quantity").value
+  let getOffSet = Number(document.getElementById("quantity").value)
   let getBoxResult = document.getElementById("ResultTextarea")
-  getBoxResult.innerHTML = cipher.decifrar(getTextArea, getOffSet)
+  getBoxResult.innerHTML = cipher.decode( getOffSet,getTextArea)
   let getBoxOutput = document.getElementById("boxOutput")
   getBoxOutput.style.display = "block"
  
@@ -27,21 +27,9 @@ getButtonDecode.onclick = function (event) {
 }
 
 
-function cifrar(offset, mensagem) {
-
-  return ("manga")
-
-}
-
-function decifrar(offset, mensagem) {
-
-  return ("abacate")
-
-}
-
 var getButtonOut=document.getElementById("buttonOut")
 
-function clickButtonOut (event){
+function clickButtonOut (){
 
   let deletMain=document.getElementById("main")
   deletMain.parentNode.removeChild(deletMain)
@@ -56,7 +44,7 @@ getButtonOut.addEventListener("click", clickButtonOut)
 
 
 let getButtonRefresh= document.getElementById("buttonRefresh")
-function clickButtonReiniciar(event){
+function clickButtonReiniciar(){
 
 document.location.reload(true)
 }
@@ -64,11 +52,10 @@ document.location.reload(true)
 getButtonRefresh.addEventListener("click",clickButtonReiniciar)
 
 let getButtonCopy=document.getElementById("buttonCopy")
-function clickButtonCopy(event){
+function clickButtonCopy(){
 let getBoxOutput= document.getElementById("ResultTextarea")
 getBoxOutput.select();
 document.execCommand("copy");
-alert("texto copiado"+getBoxOutput.value)
 
 }
  getButtonCopy.addEventListener("click",clickButtonCopy)

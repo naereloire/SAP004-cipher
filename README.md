@@ -40,13 +40,13 @@ Nesse projeto o Wireframe foi definido, pensando na experiencia do usuario confo
 * [x] `README.md` explicar claramente quem são os usuários e as suas relações com o produto.
 * [x] `README.md` explicar claramente como o produto soluciona osproblemas/necessidades dos usuários.
 * [ ] `README.md` explicar claramente como o pode ser feito deploy e instalação.
-* [ ] Usar VanillaJS.
+* [x] Usar VanillaJS.
 * [x] **Não** usar `this`.
-* [ ] Implementar `cipher.encode`.
-* [ ] Implementar `cipher.decode`.
+* [x] Implementar `cipher.encode`.
+* [x] Implementar `cipher.decode`.
 * [ ] Passar o linter com a configuração definida.
-* [ ] Passar as provas unitárias.
-* [ ] Testes unitários cubrindo 70% dos _statements_, _functions_ e _lines_, e
+* [x] Passar as provas unitárias.
+* [x] Testes unitários cubrindo 70% dos _statements_, _functions_ e _lines_, e
   no mínimo 50% das _branches_.
 * [x] Interface que permita escolher o `offset` (chave de deslocamento) usava
   para cifrar/decifrar.
