@@ -1,17 +1,10 @@
-html{
-
-margin: 0px;
-min-height: 100%;
-
-
-
-
+html {
+    margin: 0px;
+    min-height: 100%;
 }
 
-
 body {
-    
-    background-image: linear-gradient(#654EA3,#EAAFC8);
+    background-image: linear-gradient(#654EA3, #EAAFC8);
     color: #171C3E;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -22,17 +15,15 @@ body {
     padding-bottom: 0px; */
     background-repeat: no-repeat;
     min-height: 100%;
-    
 }
+
 main {
-    background-image: linear-gradient(#EEF2F3,#8E9EAB);
+    background-image: linear-gradient(#EEF2F3, #8E9EAB);
     text-align: justify;
     width: 65%;
     margin: auto;
     padding: 2em;
     height: 100vh;
-    
-    
 }
 
 h1 {
@@ -82,27 +73,26 @@ h1 {
 }
 
 #boxOutput {
-    width:45%;
+    width: 45%;
     float: right;
     display: none;
 }
 
 button {
-    background-color:#3D72B4;
-    color:#FFE8E4;
+    background-color: #3D72B4;
+    color: #FFE8E4;
     padding: 12px 24px;
     text-align: center;
     display: inline-block;
     font-size: 12px;
-    margin: 0 0 ;
+    margin: 0 0;
     font-weight: bold;
     border-radius: 5px;
-    
 }
 
 .boxStyle {
     border: 1px solid #595D75;
-    background:rgb(202, 215, 226);
+    background: rgb(202, 215, 226);
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -110,6 +100,7 @@ button {
     -moz-box-shadow: 1px 1px 2px #333333;
     -webkit-box-shadow: 1px 1px 2px #333333;
 }
+
 /* #imagemMoeda{
     align-items: left;
     width: 0 0;
@@ -122,15 +113,11 @@ button {
     padding:5em;
 } */
 
-
-#texby{
-
-    color:#171C3E ;
+#texby {
+    color: #171C3E;
     font-size: 10em;
     text-align: center;
-    
 }
-
 
 /* thebuguer**** */
 

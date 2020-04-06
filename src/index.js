@@ -3,39 +3,49 @@ import cipher from './cipher.js';
 // console.log(cipher);
 
 var getButtonEncode = document.getElementById("buttonEncode")
- getButtonEncode.onclick = function () {
+
+function clickButtonEncode() {
+
   let getTextArea = document.getElementById("messageTextArea").value
   let getOffSet = Number(document.getElementById("quantity").value)
   let getBoxResult = document.getElementById("ResultTextarea")
-  getBoxResult.innerHTML = cipher.encode( getOffSet,getTextArea)
+  getBoxResult.innerHTML = cipher.encode(getOffSet, getTextArea)
   let getBoxOutput = document.getElementById("boxOutput")
   getBoxOutput.style.display = "block"
- 
-  
+
 }
+
+getButtonEncode.addEventListener("click", clickButtonEncode)
+
+
+
 
 var getButtonDecode = document.getElementById("buttonDecode")
-getButtonDecode.onclick = function () {
+
+function clickButtonDecode() {
+
   let getTextArea = document.getElementById("messageTextArea").value
   let getOffSet = Number(document.getElementById("quantity").value)
   let getBoxResult = document.getElementById("ResultTextarea")
-  getBoxResult.innerHTML = cipher.decode( getOffSet,getTextArea)
+  getBoxResult.innerHTML = cipher.decode(getOffSet, getTextArea)
   let getBoxOutput = document.getElementById("boxOutput")
   getBoxOutput.style.display = "block"
- 
+
 
 }
 
+getButtonDecode.addEventListener("click", clickButtonDecode)
 
-var getButtonOut=document.getElementById("buttonOut")
 
-function clickButtonOut (){
+var getButtonOut = document.getElementById("buttonOut")
 
-  let deletMain=document.getElementById("main")
+function clickButtonOut() {
+
+  let deletMain = document.getElementById("main")
   deletMain.parentNode.removeChild(deletMain)
-  let getDivTextBy=document.getElementById("texby")
-  getDivTextBy.innerHTML= "Não sabemos de nada!"
-  
+  let getDivTextBy = document.getElementById("texby")
+  getDivTextBy.innerHTML = "Não sabemos de nada!"
+
 
 }
 getButtonOut.addEventListener("click", clickButtonOut)
@@ -43,22 +53,27 @@ getButtonOut.addEventListener("click", clickButtonOut)
 
 
 
-let getButtonRefresh= document.getElementById("buttonRefresh")
-function clickButtonReiniciar(){
+let getButtonRefresh = document.getElementById("buttonRefresh")
 
-document.location.reload(true)
+function clickButtonReiniciar() {
+
+  document.location.reload(true)
 }
 
-getButtonRefresh.addEventListener("click",clickButtonReiniciar)
+getButtonRefresh.addEventListener("click", clickButtonReiniciar)
 
-let getButtonCopy=document.getElementById("buttonCopy")
-function clickButtonCopy(){
-let getBoxOutput= document.getElementById("ResultTextarea")
-getBoxOutput.select();
-document.execCommand("copy");
+
+
+let getButtonCopy = document.getElementById("buttonCopy")
+
+function clickButtonCopy() {
+
+  let getBoxOutput = document.getElementById("ResultTextarea")
+  getBoxOutput.select();
+  document.execCommand("copy");
 
 }
- getButtonCopy.addEventListener("click",clickButtonCopy)
+getButtonCopy.addEventListener("click", clickButtonCopy)
 
 
 
