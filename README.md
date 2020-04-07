@@ -44,7 +44,7 @@ Nesse projeto o Wireframe foi definido, pensando na experiencia do usuario confo
 * [x] **Não** usar `this`.
 * [x] Implementar `cipher.encode`.
 * [x] Implementar `cipher.decode`.
-* [ ] Passar o linter com a configuração definida.
+* [x]  Passar o linter com a configuração definida.
 * [x] Passar as provas unitárias.
 * [x] Testes unitários cubrindo 70% dos _statements_, _functions_ e _lines_, e
   no mínimo 50% das _branches_.

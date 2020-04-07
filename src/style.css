@@ -5,16 +5,16 @@ html {
 
 body {
     background-image: linear-gradient(#654EA3, #EAAFC8);
+    background-repeat: no-repeat;
     color: #171C3E;
-    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     margin: 0 0;
-    /* margin-top: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px; */
-    background-repeat: no-repeat;
+    text-align: center;
     min-height: 100%;
+    
+    
+    
 }
 
 main {
@@ -33,85 +33,77 @@ h1 {
 #instructionStyle {
     border: solid #525252;
     height: 30%;
+    margin: auto;
     padding: 10 10;
     padding-left: 2em;
     padding-right: 2em;
     width: 60%;
-    margin: auto;
+    
 }
 
 .icon {
     background-image: url('./images/keyicon.png');
-    padding: 10px 20px;
     background-position: center center;
-    /* center center = Centro no eixo x e no eixo y */
-    vertical-align: middle;
     border-radius: 4px;
+    padding: 10px 20px;/* center center = Centro no eixo x e no eixo y */
+    vertical-align: middle;
+    
 }
 
 #quantity {
-    width: 50px;
     padding: 11px;
-    vertical-align: middle;
     text-align: center;
+    vertical-align: middle;
+    width: 50px;
 }
 
 #boxes {
-    padding-top: 1em;
-    display: table;
     clear: both;
+    display: table;
     margin: auto;
+    padding-top: 1em;
     width: 90%;
 }
 
 #boxInput {
     display: block;
-    width: 45%;
     float: left;
-    margin-bottom: 15px;
     margin: auto;
+    margin-bottom: 15px;
+    width: 45%;
 }
 
 #boxOutput {
-    width: 45%;
-    float: right;
     display: none;
+    float: right;
+    width: 45%;
+  
 }
 
 button {
     background-color: #3D72B4;
+    border-radius: 5px;
     color: #FFE8E4;
-    padding: 12px 24px;
-    text-align: center;
     display: inline-block;
     font-size: 12px;
-    margin: 0 0;
     font-weight: bold;
-    border-radius: 5px;
+    margin: 0 0;
+    padding: 12px 24px;
+    text-align: center;
+    
+    
 }
 
 .boxStyle {
-    border: 1px solid #595D75;
     background: rgb(202, 215, 226);
+    border: 1px solid #595D75;
     border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
     box-shadow: 1px 1px 2px #333333;
+    -moz-border-radius: 4px;
     -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-border-radius: 4px;
     -webkit-box-shadow: 1px 1px 2px #333333;
 }
-
-/* #imagemMoeda{
-    align-items: left;
-    width: 0 0;
-    size: 6em;
-    padding-left: 5em;
-
-}
-#coin{
-    width:5em;
-    padding:5em;
-} */
 
 #texby {
     color: #171C3E;
@@ -119,6 +111,6 @@ button {
     text-align: center;
 }
 
-/* thebuguer**** */
+
 
 /* id vem pelo # e class pelo . */
