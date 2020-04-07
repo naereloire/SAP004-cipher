@@ -45,6 +45,7 @@ function clickButtonOut() {
   deletMain.parentNode.removeChild(deletMain)
   let getDivTextBy = document.getElementById("texby")
   getDivTextBy.innerHTML = "Não sabemos de nada!"
+  getDivTextBy.style.display = "block"
 
 
 }

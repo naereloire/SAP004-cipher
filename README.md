@@ -57,8 +57,8 @@ Nesse projeto o Wireframe foi definido, pensando na experiencia do usuario confo
 
 ### Parte Opcional: "Hacker edition"
 
-* [ ] Cifrar/decifrar minúsculas.
-* [ ] Cifrar/decifrar _outros_ caractéres (espações, pontuação, `ç`, `á`, ...).
+* [x] Cifrar/decifrar minúsculas.
+* [x] Cifrar/decifrar _outros_ caractéres (espações, pontuação, `ç`, `á`, ...).
 * [ ] Permitir usar `offset` negativo.
 
 <!-- ctrl+shift+v pré vizualizar -->
