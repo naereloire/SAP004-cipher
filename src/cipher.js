@@ -17,15 +17,23 @@ const cipher = {
         case (letterCode >= "A".charCodeAt()) && (letterCode <= "Z".charCodeAt()):
           firstLetterCode = "A".charCodeAt()
 
-          encodeResult = ((letterCode - firstLetterCode + offset) % 26) + firstLetterCode;
-
-          lettersEncoded += String.fromCharCode(encodeResult)
+          encodeResult = ((letterCode - firstLetterCode + offset) % 26);
+          if(encodeResult>=0){
+          encodeResult +=firstLetterCode;}
+          
+          else{ encodeResult+=firstLetterCode+26}
+         
+          lettersEncoded+=String.fromCharCode(encodeResult)
 
           break;
         case (letterCode >= "a".charCodeAt()) && (letterCode <= "z".charCodeAt()):
           firstLetterCode = "a".charCodeAt()
 
-          encodeResult = ((letterCode - firstLetterCode + offset) % 26) + firstLetterCode;
+          encodeResult = ((letterCode - firstLetterCode + offset) % 26);
+          if(encodeResult>=0){
+            encodeResult +=firstLetterCode;}
+
+          else{ encodeResult+=firstLetterCode+26}
 
           lettersEncoded += String.fromCharCode(encodeResult)
           break;
