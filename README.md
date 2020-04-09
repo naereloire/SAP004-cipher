@@ -49,7 +49,7 @@ Nesse projeto o Wireframe foi definido, pensando na experiencia do usuario confo
 
 * Clone o projeto na sua máquina:
 
-<p>https</p>
+-https
 ```sh
 git clone https://github.com/naereloire/SAP004-cipher.git
 ```
