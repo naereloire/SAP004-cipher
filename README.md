@@ -1,4 +1,7 @@
-# Cifra de César
+
+
+## Cifra de César
+
 
 Conta a história que Júlio César utilizava um código nas mensagens enviadas a seus generais,
 um sistema simples de substituição, no qual cada letra da mensagem original era trocada pela
@@ -6,13 +9,15 @@ letra que se situa três posições à sua frente. Ficando da seguinte forma:
 Cada letra “A” era substituída pela Letra “D”, “B” por “E” e assim sucessivamente.
 Qualquer código que tenha esse padrão é considerado um código de César.
 O alfabéto possui 26 letras, dessa forma pode-se cifrar o texto de 26 formas diferente.
-
+<p align="center">
+<img src="https://media.giphy.com/media/4bSoQR9w5h0TC/giphy.gif" width="200" heigth="200"> 
+</p>
 
 ## 1. Processo de decisões do desenho:
 * Definição de provável usuário. 
 * Definição de principal problema do usuário e solução.
 * Realizado fluxograma geral da aplicação.
-* Utilizada ferramenta pencil para criar um esboço da interface da aplicação.
+* Utilizada ferramenta [<code>***pencil***</code>](https://pencil.evolus.vn/) para criar um esboço da interface da aplicação.
 
 ### 1.1 Indentificação do usuario:
 Destinado a jornalistas e suas fontes para cifragem e decifragem de textos.
@@ -29,36 +34,47 @@ Foi definido o fluxograma pensando na experiência do usuário, conforme imagem 
 
 ### 1.4 Definição de Wireframe:
 Define-se wireframe como um esqueleto, um protótipo ou uma versão bastante primitiva do visual de um projeto.
-Nesse projeto o Wireframe foi definido, pensando na experiencia do usuario conforme esboço abaixo, realizado na ferramente ***Pencil***
+Nesse projeto o Wireframe foi definido, pensando na experiencia do usuario conforme esboço abaixo, realizado na ferramente <code>***Pencil***</code>
 
 
 ![wireframe cifra de césar](img_readme/pagina_result.png)
 
+## 2. Montagem do ambiente de desenvolvimento.
 
-## 2.CHECKLIST
-* [x] `README.md` adicionar informação sobre o processo e decisões do desenho.
-* [x] `README.md` explicar claramente quem são os usuários e as suas relações com o produto.
-* [x] `README.md` explicar claramente como o produto soluciona osproblemas/necessidades dos usuários.
-* [ ] `README.md` explicar claramente como o pode ser feito deploy e instalação.
-* [x] Usar VanillaJS.
-* [x] **Não** usar `this`.
-* [x] Implementar `cipher.encode`.
-* [x] Implementar `cipher.decode`.
-* [ ] Passar o linter com a configuração definida.
-* [x] Passar as provas unitárias.
-* [x] Testes unitários cubrindo 70% dos _statements_, _functions_ e _lines_, e
-  no mínimo 50% das _branches_.
-* [x] Interface que permita escolher o `offset` (chave de deslocamento) usava
-  para cifrar/decifrar.
-* [x] Interface que permita escrever um texto para ser cifrado.
-* [x] Interface que mostre o resultado da cifra corretamente.
-* [x] Interface que permita escrever um texto para ser decifrado.
-* [x] Interface que mostre o resultado decifrado corretamente.
+:warning:Será necessária instalação do [<code>***Node.js***</code>](https://nodejs.org/en/)(que contém o [<code>***npm***</code>](https://docs.npmjs.com/))
+****
 
-### Parte Opcional: "Hacker edition"
+* Clone o projeto na sua máquina:
+https
+```sh
+git clone https://github.com/naereloire/SAP004-cipher.git
+```
 
-* [ ] Cifrar/decifrar minúsculas.
-* [ ] Cifrar/decifrar _outros_ caractéres (espações, pontuação, `ç`, `á`, ...).
-* [ ] Permitir usar `offset` negativo.
+* Instale as dependências do projeto: 
+```sh
+npm install
+```
+* Rode o projeto na sua máquina:
+```sh
+npm start
+```
+* Vizualize o projeto no seu navegador:
+```sh
+http://localhost:5000
+```
+## :clipboard: 3.Testes
+* Para executar os testes:
+```sh
+npm test
+```
+
+
+
+
+
+
+
+
+
 
 <!-- ctrl+shift+v pré vizualizar -->

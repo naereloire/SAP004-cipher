@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <div id="texby"> </div>
+  
 
   <main id="main">
     <h1>Cifra de César-Criptografia Monoalfabética</h1>
@@ -37,9 +37,9 @@
       <p> Para utilizar a cifra de césar siga os tópicos abaixo:
 
         <ol>
-          <li>Insira sua mensagem no campo de texto abaixo (Não utilize caracteres especiais).</li>
+          <li>Insira sua mensagem no campo de texto abaixo.</li>
           <li>Escolha o offset no ícone da chave.</li>
-          <li>Clique no botão de acordo com a opção desejada codificar/decodificar.</li>
+          <li>Clique no botão de acordo com a opção desejada codificar(encode)/decodificar(decode).</li>
           <li>Sua mensagem aparecerá no campo de texto a direita, podendo ser copiada.</li>
         </ol>
       </p>
@@ -57,13 +57,13 @@
 
         <form>
           <i class="icon"></i>
-          <input type="number" id="quantity" class="boxStyle" name="quantity" min="1" value="1">
+          <input type="number" id="quantity" class="boxStyle" name="quantity" value="1">
           <button type="button" id="buttonEncode">ENCODE</button>
           <button type="button" id="buttonDecode">DECODE</button>
         </form>
       </div>
 
-      <!-- <div id="imagemMoeda"> <img id="coin" src="images/logocifra.jpg"> </div> -->
+      <!-- <div id="imagemMoeda"> <img id="coin" src="images/logocifra.jpg">  </div> -->
 
 
       <div id="boxOutput">
@@ -72,7 +72,6 @@
 
         <textarea name="resultTextarea" id="ResultTextarea" class="boxStyle" cols="50" rows="10"
           placeholder=" Seu resultado vai aparecer aqui"></textarea>
-
 
 
         <form>
@@ -87,7 +86,7 @@
     </div>
     <script src="index.js" type="module"></script>
   </main>
-
+  <div id="texby"> </div>
 </body>
 
 </html>
