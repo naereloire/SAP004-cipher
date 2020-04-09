@@ -46,6 +46,9 @@ function clickButtonOut() {
   let getDivTextBy = document.getElementById("texby")
   getDivTextBy.innerHTML = "Não sabemos de nada!"
   getDivTextBy.style.display = "block"
+  let CreateImgBy= document.createElement("img")
+  getDivTextBy.appendChild(CreateImgBy)
+  CreateImgBy.srcset="https://media.giphy.com/media/3ov9jUEETwqYJaijGo/giphy.gif"
 
 
 }
