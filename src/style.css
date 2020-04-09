@@ -12,43 +12,34 @@ body {
     margin: 0 0;
     text-align: center;
     min-height: 100%;
-    
-    
-    
 }
 
 main {
     background-image: linear-gradient(#EEF2F3, #8E9EAB);
+    height: 100vw;
+    margin: auto;
+    padding: 2em;
     text-align: justify;
-    width:65%;
-    margin:auto;
-    padding:2em;
-    height:100vw;
-}
-
-h1 {
-    color: #171C3E;
+    width: 65%;
 }
 
 #instructionStyle {
     border: solid #525252;
+    font-size: 1.2em;
     height: 18em;
     margin: auto;
     padding: 10 10;
     padding-left: 2em;
     padding-right: 2em;
     width: 50%;
-    font-size: 1.2em;
-    
 }
 
 .icon {
     background-image: url('./images/keyicon.png');
     background-position: center center;
     border-radius: 4px;
-    padding: 10px 20px;/* center center = Centro no eixo x e no eixo y */
+    padding: 10px 20px;
     vertical-align: middle;
-    
 }
 
 #quantity {
@@ -78,7 +69,6 @@ h1 {
     display: none;
     float: right;
     width: 45%;
-  
 }
 
 button {
@@ -91,8 +81,6 @@ button {
     margin: 0 0;
     padding: 12px 24px;
     text-align: center;
-    
-    
 }
 
 .boxStyle {
@@ -110,11 +98,7 @@ button {
     color: #171C3E;
     font-size: 10em;
     text-align: center;
-    margin-top:250px;
+    margin-top: 250px;
     height: 100%;
     display: none;
 }
-
-
-
-/* id vem pelo # e class pelo . */
