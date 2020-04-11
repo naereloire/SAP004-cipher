@@ -1,7 +1,6 @@
 import cipher from './cipher.js';
 
 
-
 var getButtonEncode = document.getElementById("buttonEncode")
 
 function clickButtonEncode() {
@@ -18,8 +17,6 @@ function clickButtonEncode() {
 getButtonEncode.addEventListener("click", clickButtonEncode)
 
 
-
-
 var getButtonDecode = document.getElementById("buttonDecode")
 
 function clickButtonDecode() {
@@ -30,7 +27,6 @@ function clickButtonDecode() {
   getBoxResult.innerHTML = cipher.decode(getOffSet, getTextArea)
   let getBoxOutput = document.getElementById("boxOutput")
   getBoxOutput.style.display = "block"
-
 
 }
 
@@ -55,8 +51,6 @@ function clickButtonOut() {
 getButtonOut.addEventListener("click", clickButtonOut)
 
 
-
-
 let getButtonRefresh = document.getElementById("buttonRefresh")
 
 function clickButtonReiniciar() {
@@ -65,7 +59,6 @@ function clickButtonReiniciar() {
 }
 
 getButtonRefresh.addEventListener("click", clickButtonReiniciar)
-
 
 
 let getButtonCopy = document.getElementById("buttonCopy")
@@ -78,9 +71,3 @@ function clickButtonCopy() {
 
 }
 getButtonCopy.addEventListener("click", clickButtonCopy)
-
-
-
-
-// addEventListener recebe 2 parametros o evento q ele vai ouvir e a função
-// elemento evento e instrução
