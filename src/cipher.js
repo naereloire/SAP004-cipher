@@ -54,7 +54,7 @@ const cipher = {
 
   },
 
-  
+
   decode: function (offset, mensagem) {
     if (typeof mensagem != "string" || typeof offset != "number") {
       throw new TypeError
