@@ -53,12 +53,12 @@ getButtonOut.addEventListener("click", clickButtonOut)
 
 let getButtonRefresh = document.getElementById("buttonRefresh")
 
-function clickButtonReiniciar() {
+function clickButtonRefresh() {
 
   document.location.reload(true)
 }
 
-getButtonRefresh.addEventListener("click", clickButtonReiniciar)
+getButtonRefresh.addEventListener("click", clickButtonRefresh)
 
 
 let getButtonCopy = document.getElementById("buttonCopy")
