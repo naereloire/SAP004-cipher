@@ -1,4 +1,5 @@
 function cipherOperation(offset, letterCode) {
+  const alfhabetLength=26;
   let firstLetterCode;
   let changedLetter;
 
@@ -6,26 +7,26 @@ function cipherOperation(offset, letterCode) {
 
     case (letterCode >= "A".charCodeAt()) && (letterCode <= "Z".charCodeAt()):
       firstLetterCode = "A".charCodeAt()
-      changedLetter = ((letterCode - firstLetterCode + offset) % 26);
+      changedLetter = ((letterCode - firstLetterCode + offset) % alfhabetLength);
 
       if (changedLetter >= 0) {
         changedLetter += firstLetterCode
       }
       else {
-        changedLetter += firstLetterCode + 26
+        changedLetter += firstLetterCode + alfhabetLength
       }
 
       return String.fromCharCode(changedLetter);
 
     case (letterCode >= "a".charCodeAt()) && (letterCode <= "z".charCodeAt()):
       firstLetterCode = "a".charCodeAt()
-      changedLetter = ((letterCode - firstLetterCode + offset) % 26);
+      changedLetter = ((letterCode - firstLetterCode + offset) % alfhabetLength);
 
       if (changedLetter >= 0) {
         changedLetter += firstLetterCode
       }
       else {
-        changedLetter += firstLetterCode + 26
+        changedLetter += firstLetterCode + alfhabetLength
       }
 
       return String.fromCharCode(changedLetter);
