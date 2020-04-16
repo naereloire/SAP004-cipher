@@ -3,8 +3,12 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Caesar Cipher</title>
-  <link rel="stylesheet" href="style.css" />
+  
+  <header>
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+  </header>
+
 </head>
 
 <body>
@@ -44,40 +48,42 @@
 
     </div>
 
-    <div id="boxes">
+    <form id="boxes">
 
-      <div id="boxInput">
+      <section id="boxInput">
+        
         <label for="messageTextArea"><strong>Mensagem:</strong></label>
         <textarea name="textarea" id="messageTextArea" class="boxStyle" cols="50" rows="10"
           placeholder="Insira a mensagem aqui"></textarea>
 
-        <form>
+        <div>
           <i class="icon"></i>
           <input type="number" id="quantity" class="boxStyle" name="quantity" value="1">
           <button type="button" id="buttonEncode">ENCODE</button>
           <button type="button" id="buttonDecode">DECODE</button>
-        </form>
-      </div>
+        </div>
+      </section>
 
-      <div id="boxOutput">
+      <section id="boxOutput">
 
         <label for="resultTextarea"><strong>Resultado:</strong></label>
-
         <textarea name="resultTextarea" id="ResultTextarea" class="boxStyle" cols="50" rows="10"
           placeholder=" Seu resultado vai aparecer aqui"></textarea>
 
-        <form>
+        <div>
           <button type="button" id="buttonCopy">COPIAR</button>
           <button type="button" id="buttonRefresh">REINICIAR</button>
           <button type="button" id="buttonOut">SAIR</button>
-        </form>
-      </div>
+        </div>
+      </section>
 
-    </div>
+    </form>
     <script src="index.js" type="module"></script>
   </main>
 
   <div id="texby"> </div>
+
+  <footer>teste</footer>
 
 </body>
 
