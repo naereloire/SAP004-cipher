@@ -1,9 +1,9 @@
-html {
+.html-style {
     margin: 0px;
     min-height: 100%;
 }
 
-body {
+.body-style {
     background-image: linear-gradient(#654EA3, #EAAFC8);
     background-repeat: no-repeat;
     color: #171C3E;
@@ -14,7 +14,7 @@ body {
     min-height: 100%;
 }
 
-main {
+.main-style {
     background-image: linear-gradient(#EEF2F3, #8E9EAB);
     height: 100vw;
     margin: auto;
@@ -23,7 +23,7 @@ main {
     width: 65%;
 }
 
-#instructionStyle {
+.instruction-style {
     border: solid #525252;
     font-size: 1.2em;
     height: 18em;
@@ -42,14 +42,14 @@ main {
     vertical-align: middle;
 }
 
-#quantity {
+#input-number {
     padding: 11px;
     text-align: center;
     vertical-align: middle;
     width: 50px;
 }
 
-#boxes {
+.boxes {
     clear: both;
     display: table;
     margin: auto;
@@ -57,7 +57,7 @@ main {
     width: 90%;
 }
 
-#boxInput {
+.box-input {
     display: block;
     float: left;
     margin: auto;
@@ -65,13 +65,13 @@ main {
     width: 45%;
 }
 
-#boxOutput {
+.box-output {
     display: none;
     float: right;
     width: 45%;
 }
 
-button {
+.button-style {
     background-color: #3D72B4;
     border-radius: 5px;
     color: #FFE8E4;
@@ -83,7 +83,7 @@ button {
     text-align: center;
 }
 
-.boxStyle {
+.box-style {
     background: rgb(202, 215, 226);
     border: 1px solid #595D75;
     border-radius: 4px;
@@ -94,7 +94,7 @@ button {
     -webkit-box-shadow: 1px 1px 2px #333333;
 }
 
-#texby {
+#tex-by {
     color: #171C3E;
     font-size: 10em;
     text-align: center;

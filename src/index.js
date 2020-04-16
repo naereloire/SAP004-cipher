@@ -1,15 +1,15 @@
 import cipher from './cipher.js';
 
 
-var getButtonEncode = document.getElementById("buttonEncode")
+var getButtonEncode = document.getElementById("buttonencode")
 
 function clickButtonEncode() {
 
-  let getTextArea = document.getElementById("messageTextArea").value
-  let getOffSet = Number(document.getElementById("quantity").value)
-  let getBoxResult = document.getElementById("ResultTextarea")
+  let getTextArea = document.getElementById("messagetextarea").value
+  let getOffSet = Number(document.getElementById("input-number").value)
+  let getBoxResult = document.getElementById("resulttextarea")
   getBoxResult.innerHTML = cipher.encode(getOffSet, getTextArea)
-  let getBoxOutput = document.getElementById("boxOutput")
+  let getBoxOutput = document.getElementById("boxout")
   getBoxOutput.style.display = "block"
 
 }
@@ -17,15 +17,15 @@ function clickButtonEncode() {
 getButtonEncode.addEventListener("click", clickButtonEncode)
 
 
-var getButtonDecode = document.getElementById("buttonDecode")
+var getButtonDecode = document.getElementById("buttondecode")
 
 function clickButtonDecode() {
 
-  let getTextArea = document.getElementById("messageTextArea").value
-  let getOffSet = Number(document.getElementById("quantity").value)
-  let getBoxResult = document.getElementById("ResultTextarea")
+  let getTextArea = document.getElementById("messagetextarea").value
+  let getOffSet = Number(document.getElementById("input-number").value)
+  let getBoxResult = document.getElementById("resulttextarea")
   getBoxResult.innerHTML = cipher.decode(getOffSet, getTextArea)
-  let getBoxOutput = document.getElementById("boxOutput")
+  let getBoxOutput = document.getElementById("boxout")
   getBoxOutput.style.display = "block"
 
 }
@@ -33,13 +33,14 @@ function clickButtonDecode() {
 getButtonDecode.addEventListener("click", clickButtonDecode)
 
 
-var getButtonOut = document.getElementById("buttonOut")
+var getButtonOut = document.getElementById("buttonout")
 
 function clickButtonOut() {
 
   let deletMain = document.getElementById("main")
   deletMain.parentNode.removeChild(deletMain)
-  let getDivTextBy = document.getElementById("texby")
+  let getDivTextBy = document.getElementsByClassName("tex-by")
+  getDivTextBy= getDivTextBy.item(0)
   getDivTextBy.innerHTML = "Não sabemos de nada!"
   getDivTextBy.style.display = "block"
   let CreateImgBy= document.createElement("img")
@@ -51,7 +52,7 @@ function clickButtonOut() {
 getButtonOut.addEventListener("click", clickButtonOut)
 
 
-let getButtonRefresh = document.getElementById("buttonRefresh")
+let getButtonRefresh = document.getElementById("buttonrefresh")
 
 function clickButtonRefresh() {
 
@@ -61,11 +62,11 @@ function clickButtonRefresh() {
 getButtonRefresh.addEventListener("click", clickButtonRefresh)
 
 
-let getButtonCopy = document.getElementById("buttonCopy")
+let getButtonCopy = document.getElementById("buttoncopy")
 
 function clickButtonCopy() {
 
-  let getBoxOutput = document.getElementById("ResultTextarea")
+  let getBoxOutput = document.getElementById("resulttextarea")
   getBoxOutput.select();
   document.execCommand("copy");
 

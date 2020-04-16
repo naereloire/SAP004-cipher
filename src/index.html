@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html class="html-style">
 
 <head>
   <meta charset="utf-8">
-  
+
   <header>
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
@@ -11,9 +11,9 @@
 
 </head>
 
-<body>
+<body class="body-style">
 
-  <main id="main">
+  <main id="main" class="main-style">
     <h1>Cifra de César-Criptografia Monoalfabética</h1>
     <hr>
 
@@ -30,7 +30,7 @@
       O alfabéto possui 26 letras, dessa forma pode-se cifrar o texto de 26 formas diferente.
     </p>
 
-    <div id="instructionStyle">
+    <div class="instruction-style">
 
       <h2>INSTRUÇÕES</h2>
 
@@ -48,43 +48,41 @@
 
     </div>
 
-    <form id="boxes">
+    <form class="boxes">
 
-      <section id="boxInput">
-        
-        <label for="messageTextArea"><strong>Mensagem:</strong></label>
-        <textarea name="textarea" id="messageTextArea" class="boxStyle" cols="50" rows="10"
+      <section class="box-input">
+
+        <label for="messagetextarea"><strong>Mensagem:</strong></label>
+        <textarea name="textarea" id="messagetextarea" class="box-style" cols="50" rows="10"
           placeholder="Insira a mensagem aqui"></textarea>
 
         <div>
           <i class="icon"></i>
-          <input type="number" id="quantity" class="boxStyle" name="quantity" value="1">
-          <button type="button" id="buttonEncode">ENCODE</button>
-          <button type="button" id="buttonDecode">DECODE</button>
+          <input type="number" id="input-number" class="box-style" name="quantity" value="1">
+          <button type="button" id="buttonencode" class="button-style">ENCODE</button>
+          <button type="button" id="buttondecode" class="button-style">DECODE</button>
         </div>
       </section>
 
-      <section id="boxOutput">
+      <section id="boxout" class="box-output">
 
-        <label for="resultTextarea"><strong>Resultado:</strong></label>
-        <textarea name="resultTextarea" id="ResultTextarea" class="boxStyle" cols="50" rows="10"
+        <label for="resulttextarea"><strong>Resultado:</strong></label>
+        <textarea name="resulttextarea" id="resulttextarea" class="box-style" cols="50" rows="10"
           placeholder=" Seu resultado vai aparecer aqui"></textarea>
 
         <div>
-          <button type="button" id="buttonCopy">COPIAR</button>
-          <button type="button" id="buttonRefresh">REINICIAR</button>
-          <button type="button" id="buttonOut">SAIR</button>
+          <button type="button" id="buttoncopy" class="button-style">COPIAR</button>
+          <button type="button" id="buttonrefresh" class="button-style">REINICIAR</button>
+          <button type="button" id="buttonout" class="button-style">SAIR</button>
         </div>
       </section>
 
     </form>
     <script src="index.js" type="module"></script>
+    
   </main>
-
-  <div id="texby"> </div>
-
-  <footer>teste</footer>
-
+  
+  <div class="tex-by"> </div>
 </body>
 
 </html>
