@@ -1,5 +1,5 @@
 function cipherOperation(offset, letterCode) {
-  const alfhabetLength=26;
+  const alfhabetLength = 26;
   let firstLetterCode;
   let changedLetter;
 
