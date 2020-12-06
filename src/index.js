@@ -41,7 +41,7 @@ function clickButtonOut() {
   deletMain.parentNode.removeChild(deletMain)
   let getDivTextBy = document.getElementsByClassName("tex-by")
   getDivTextBy= getDivTextBy.item(0)
-  getDivTextBy.innerHTML = "Não sabemos de nada!"
+  getDivTextBy.innerHTML = ""
   getDivTextBy.style.display = "block"
   let CreateImgBy= document.createElement("img")
   getDivTextBy.appendChild(CreateImgBy)
