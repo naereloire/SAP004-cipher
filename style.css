@@ -1,0 +1,104 @@
+.html-style {
+    margin: 0px;
+    min-height: 100%;
+}
+
+.body-style {
+    background-image: linear-gradient(#654EA3, #EAAFC8);
+    background-repeat: no-repeat;
+    color: #171C3E;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    margin: 0 0;
+    text-align: center;
+    min-height: 100%;
+}
+
+.main-style {
+    background-image: linear-gradient(#EEF2F3, #8E9EAB);
+    height: 50vw;
+    margin: auto;
+    padding: 2em;
+    text-align: justify;
+    width: 65%;
+}
+
+.instruction-style {
+    border: solid #525252;
+    font-size: 1.2em;
+    height: 18em;
+    margin: auto;
+    padding: 10 10;
+    padding-left: 2em;
+    padding-right: 2em;
+    width: 50%;
+}
+
+.icon {
+    background-image: url('./images/keyicon.png');
+    background-position: center center;
+    border-radius: 4px;
+    padding: 10px 20px;
+    vertical-align: middle;
+}
+
+#input-number {
+    padding: 11px;
+    text-align: center;
+    vertical-align: middle;
+    width: 50px;
+}
+
+.boxes {
+    clear: both;
+    display: table;
+    margin: auto;
+    padding-top: 1em;
+    width: 90%;
+}
+
+.box-input {
+    display: block;
+    float: left;
+    margin: auto;
+    margin-bottom: 15px;
+    width: 45%;
+}
+
+.box-output {
+    display: none;
+    float: right;
+    width: 45%;
+}
+
+.button-style {
+    background-color: #3D72B4;
+    border-radius: 5px;
+    color: #FFE8E4;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 0;
+    padding: 12px 24px;
+    text-align: center;
+}
+
+.box-style {
+    background: rgb(202, 215, 226);
+    border: 1px solid #595D75;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px #333333;
+    -moz-border-radius: 4px;
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-border-radius: 4px;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+}
+
+.tex-by {
+    color: #171C3E;
+    font-size: 10em;
+    text-align: center;
+    margin-top: 250px;
+    height: 100%;
+    display: none;
+}
