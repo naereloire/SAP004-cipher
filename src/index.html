@@ -14,6 +14,7 @@
 <body class="body-style">
 
   <main id="main" class="main-style">
+    <section class="container-introduction">
     <h1>Cifra de César-Criptografia Monoalfabética</h1>
     <hr>
 
@@ -29,6 +30,7 @@
       Qualquer código que tenha esse padrão é considerado um código de César.
       O alfabéto possui 26 letras, dessa forma pode-se cifrar o texto de 26 formas diferente.
     </p>
+    </section>
 
     <div class="instruction-style">
 
@@ -47,10 +49,10 @@
         será necessária para codificar e decodificar sua mensagem.</h5>
 
     </div>
+<section class="container-boxes">
+    <!-- <form class="boxes"> -->
 
-    <form class="boxes">
-
-      <section class="box-input">
+      <div class="box-input">
 
         <label for="messagetextarea"><strong>Mensagem:</strong></label>
         <textarea name="textarea" id="messagetextarea" class="box-style" cols="40" rows="10"
@@ -62,9 +64,9 @@
           <button type="button" id="buttonencode" class="button-style">ENCODE</button>
           <button type="button" id="buttondecode" class="button-style">DECODE</button>
         </div>
-      </section>
+      </div>
 
-      <section id="boxout" class="box-output">
+      <div id="boxout" class="box-output">
 
         <label for="resulttextarea"><strong>Resultado:</strong></label>
         <textarea name="resulttextarea" id="resulttextarea" class="box-style" cols="40" rows="10"
@@ -75,9 +77,10 @@
           <button type="button" id="buttonrefresh" class="button-style">REINICIAR</button>
           <button type="button" id="buttonout" class="button-style">SAIR</button>
         </div>
-      </section>
+      </div>
 
-    </form>
+    <!-- </form> -->
+  </section>
     <script src="index.js" type="module"></script>
     
   </main>
