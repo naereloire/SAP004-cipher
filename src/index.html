@@ -3,88 +3,74 @@
 
 <head>
   <meta charset="utf-8">
-
   <header>
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </header>
-
 </head>
 
-<body class="body-style">
+<body>
+  <main id="main" class="main-container">
 
-  <main id="main" class="main-style">
-    <section class="container-introduction">
-    <h1>Cifra de César-Criptografia Monoalfabética</h1>
-    <hr>
+    <section class="container-textos">
 
-    <p> A criptografia monoalfabética, é algo que atrai jornalistas que precisam se comunicar com
-      suas fontes de forma segura. Garatindo que caso a mensagem seja intercepitada, seu conteúdo
-      não seja revelado.
-    </p>
+      <div class="introducao">
+        <h1>Cifra de César-Criptografia Monoalfabética</h1>
+        <p> A criptografia monoalfabética, é algo que atrai jornalistas que precisam se comunicar com
+          suas fontes de forma segura. Garatindo que caso a mensagem seja intercepitada, seu conteúdo
+          não seja revelado.
+        </p>
+        <p> Conta a história que Júlio César utilizava um código nas mensagens enviadas a seus generais,
+          um sistema simples de substituição, no qual cada letra da mensagem original era trocada pela
+          letra que se situa três posições à sua frente. Ficando da seguinte forma:
+          Cada letra “A” era substituída pela Letra “D”, “B” por “E” e assim sucessivamente.
+          Qualquer código que tenha esse padrão é considerado um código de César.
+          O alfabéto possui 26 letras, dessa forma pode-se cifrar o texto de 26 formas diferente.
+        </p>
+      </div>
 
-    <p> Conta a história que Júlio César utilizava um código nas mensagens enviadas a seus generais,
-      um sistema simples de substituição, no qual cada letra da mensagem original era trocada pela
-      letra que se situa três posições à sua frente. Ficando da seguinte forma:
-      Cada letra “A” era substituída pela Letra “D”, “B” por “E” e assim sucessivamente.
-      Qualquer código que tenha esse padrão é considerado um código de César.
-      O alfabéto possui 26 letras, dessa forma pode-se cifrar o texto de 26 formas diferente.
-    </p>
-    </section>
-
-    <div class="instruction-style">
-
-      <h2>INSTRUÇÕES</h2>
-
-      <p> Para utilizar a cifra de césar siga os tópicos abaixo:
+      <div class="instrucoes">
+        <h2>INSTRUÇÕES</h2>
+        <p> Para utilizar a cifra de césar siga os tópicos abaixo:</p>
         <ol>
           <li>Insira sua mensagem no campo de texto abaixo.</li>
           <li>Escolha o offset no ícone da chave.</li>
           <li>Clique no botão de acordo com a opção desejada codificar(encode)/decodificar(decode).</li>
           <li>Sua mensagem aparecerá no campo de texto a direita, podendo ser copiada.</li>
         </ol>
-      </p>
-
-      <h5><mark>IMPORTANTE:</mark>Não esqueça que a mesma chave escolhida
-        será necessária para codificar e decodificar sua mensagem.</h5>
-
-    </div>
-<section class="container-boxes">
-    <!-- <form class="boxes"> -->
-
-      <div class="box-input">
-
-        <label for="messagetextarea"><strong>Mensagem:</strong></label>
-        <textarea name="textarea" id="messagetextarea" class="box-style" cols="40" rows="10"
-          placeholder="Insira a mensagem aqui" style="font-size:20px"></textarea>
-
-        <div>
-          <i class="icon"></i>
-          <input type="number" id="input-number" class="box-style" name="quantity" value="1">
-          <button type="button" id="buttonencode" class="button-style">ENCODE</button>
-          <button type="button" id="buttondecode" class="button-style">DECODE</button>
-        </div>
+        <mark>IMPORTANTE:</mark>
+        <p>A mesma chave escolhida
+          será necessária para codificar e decodificar sua mensagem.</p>
       </div>
 
-      <div id="boxout" class="box-output">
-
-        <label for="resulttextarea"><strong>Resultado:</strong></label>
-        <textarea name="resulttextarea" id="resulttextarea" class="box-style" cols="40" rows="10"
-          placeholder=" Seu resultado vai aparecer aqui" style="font-size:20px"></textarea>
-
-        <div>
-          <button type="button" id="buttoncopy" class="button-style">COPIAR</button>
-          <button type="button" id="buttonrefresh" class="button-style">REINICIAR</button>
-          <button type="button" id="buttonout" class="button-style">SAIR</button>
+      <section class="container-boxes">
+        <!-- <form class="boxes"> -->
+        <div class="box-input">
+          <label for="messagetextarea"><strong>Mensagem:</strong></label>
+          <textarea name="textarea" id="messagetextarea" class="box-style" cols="40" rows="10"
+            placeholder="Insira a mensagem aqui" style="font-size:20px"></textarea>
+          <span>
+            <i class="icon"></i>
+            <input type="number" id="input-number" class="box-style" name="quantity" value="1">
+            <button type="button" id="buttonencode" class="button-style">ENCODE</button>
+            <button type="button" id="buttondecode" class="button-style">DECODE</button>
+          </span>
         </div>
-      </div>
 
-    <!-- </form> -->
-  </section>
-    <script src="index.js" type="module"></script>
-    
+        <div id="boxout" class="box-output">
+          <label for="resulttextarea"><strong>Resultado:</strong></label>
+          <textarea name="resulttextarea" id="resulttextarea" class="box-style" cols="40" rows="10"
+            placeholder=" Seu resultado vai aparecer aqui" style="font-size:20px"></textarea>
+          <span>
+            <button type="button" id="buttoncopy" class="button-style">COPIAR</button>
+            <button type="button" id="buttonrefresh" class="button-style">REINICIAR</button>
+            <button type="button" id="buttonout" class="button-style">SAIR</button>
+          </span>
+        </div>
+        <!-- </form> -->
+      </section>
+      <script src="index.js" type="module"></script>
   </main>
-  
   <div class="tex-by"> </div>
 </body>
 

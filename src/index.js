@@ -10,7 +10,7 @@ function clickButtonEncode() {
   let getBoxResult = document.getElementById("resulttextarea")
   getBoxResult.innerHTML = cipher.encode(getOffSet, getTextArea)
   let getBoxOutput = document.getElementById("boxout")
-  getBoxOutput.style.display = "block"
+  getBoxOutput.style.display = "flex"
 
 }
 
@@ -26,7 +26,7 @@ function clickButtonDecode() {
   let getBoxResult = document.getElementById("resulttextarea")
   getBoxResult.innerHTML = cipher.decode(getOffSet, getTextArea)
   let getBoxOutput = document.getElementById("boxout")
-  getBoxOutput.style.display = "block"
+  getBoxOutput.style.display = "flex"
 
 }
 
@@ -40,12 +40,12 @@ function clickButtonOut() {
   let deletMain = document.getElementById("main")
   deletMain.parentNode.removeChild(deletMain)
   let getDivTextBy = document.getElementsByClassName("tex-by")
-  getDivTextBy= getDivTextBy.item(0)
+  getDivTextBy = getDivTextBy.item(0)
   getDivTextBy.innerHTML = ""
-  getDivTextBy.style.display = "block"
-  let CreateImgBy= document.createElement("img")
+  getDivTextBy.style.display = "flex"
+  let CreateImgBy = document.createElement("img")
   getDivTextBy.appendChild(CreateImgBy)
-  CreateImgBy.srcset="https://media.giphy.com/media/3ov9jUEETwqYJaijGo/giphy.gif"
+  CreateImgBy.srcset = "https://media.giphy.com/media/3ov9jUEETwqYJaijGo/giphy.gif"
 
 
 }
