@@ -38,34 +38,34 @@
         <p>A mesma chave escolhida
           será necessária para codificar e decodificar sua mensagem.</p>
       </div>
+    </section>
+    <section class="container-boxes">
+      <!-- <form class="boxes"> -->
+      <div class="box-input">
+        <label for="messagetextarea"><strong>Mensagem:</strong></label>
+        <textarea name="textarea" id="messagetextarea" class="box-style" cols="40" rows="10"
+          placeholder="Insira a mensagem aqui" style="font-size:20px"></textarea>
+        <span class="spans-place-holder">
+          <i class="icon"></i>
+          <input type="number" id="input-number" class="box-style" name="quantity" value="1">
+          <button type="button" id="buttonencode" class="button-style">ENCODE</button>
+          <button type="button" id="buttondecode" class="button-style">DECODE</button>
+        </span>
+      </div>
 
-      <section class="container-boxes">
-        <!-- <form class="boxes"> -->
-        <div class="box-input">
-          <label for="messagetextarea"><strong>Mensagem:</strong></label>
-          <textarea name="textarea" id="messagetextarea" class="box-style" cols="40" rows="10"
-            placeholder="Insira a mensagem aqui" style="font-size:20px"></textarea>
-          <span class="spans-place-holder">
-            <i class="icon"></i>
-            <input type="number" id="input-number" class="box-style" name="quantity" value="1">
-            <button type="button" id="buttonencode" class="button-style">ENCODE</button>
-            <button type="button" id="buttondecode" class="button-style">DECODE</button>
-          </span>
-        </div>
-
-        <div id="boxout" class="box-output">
-          <label for="resulttextarea"><strong>Resultado:</strong></label>
-          <textarea name="resulttextarea" id="resulttextarea" class="box-style" cols="40" rows="10"
-            placeholder=" Seu resultado vai aparecer aqui" style="font-size:20px"></textarea>
-          <span spans-place-holder>
-            <button type="button" id="buttoncopy" class="button-style">COPIAR</button>
-            <button type="button" id="buttonrefresh" class="button-style">REINICIAR</button>
-            <button type="button" id="buttonout" class="button-style">SAIR</button>
-          </span>
-        </div>
-        <!-- </form> -->
-      </section>
-      <script src="index.js" type="module"></script>
+      <div id="boxout" class="box-output">
+        <label for="resulttextarea"><strong>Resultado:</strong></label>
+        <textarea name="resulttextarea" id="resulttextarea" class="box-style" cols="40" rows="10"
+          placeholder=" Seu resultado vai aparecer aqui" style="font-size:20px"></textarea>
+        <span spans-place-holder>
+          <button type="button" id="buttoncopy" class="button-style">COPIAR</button>
+          <button type="button" id="buttonrefresh" class="button-style">REINICIAR</button>
+          <button type="button" id="buttonout" class="button-style">SAIR</button>
+        </span>
+      </div>
+      <!-- </form> -->
+    </section>
+    <script src="index.js" type="module"></script>
   </main>
   <div class="tex-by"> </div>
 </body>
