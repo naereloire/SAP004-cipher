@@ -15,11 +15,7 @@
     <section class="container-textos">
 
       <div class="introducao">
-        <h1>Cifra de César-Criptografia Monoalfabética</h1>
-        <p> A criptografia monoalfabética, é algo que atrai jornalistas que precisam se comunicar com
-          suas fontes de forma segura. Garatindo que caso a mensagem seja intercepitada, seu conteúdo
-          não seja revelado.
-        </p>
+        <h1>Cifra de César</h1>
         <p> Conta a história que Júlio César utilizava um código nas mensagens enviadas a seus generais,
           um sistema simples de substituição, no qual cada letra da mensagem original era trocada pela
           letra que se situa três posições à sua frente. Ficando da seguinte forma:
@@ -49,7 +45,7 @@
           <label for="messagetextarea"><strong>Mensagem:</strong></label>
           <textarea name="textarea" id="messagetextarea" class="box-style" cols="40" rows="10"
             placeholder="Insira a mensagem aqui" style="font-size:20px"></textarea>
-          <span>
+          <span class="spans-place-holder">
             <i class="icon"></i>
             <input type="number" id="input-number" class="box-style" name="quantity" value="1">
             <button type="button" id="buttonencode" class="button-style">ENCODE</button>
@@ -61,7 +57,7 @@
           <label for="resulttextarea"><strong>Resultado:</strong></label>
           <textarea name="resulttextarea" id="resulttextarea" class="box-style" cols="40" rows="10"
             placeholder=" Seu resultado vai aparecer aqui" style="font-size:20px"></textarea>
-          <span>
+          <span spans-place-holder>
             <button type="button" id="buttoncopy" class="button-style">COPIAR</button>
             <button type="button" id="buttonrefresh" class="button-style">REINICIAR</button>
             <button type="button" id="buttonout" class="button-style">SAIR</button>
